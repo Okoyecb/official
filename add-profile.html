@@ -19,39 +19,39 @@
   </head>
 
   <body >
-        <nav class="navbar navbar-expand-md flex-md-nowrap sticky-top bg-dark navbar-dark fixed-top p-0">
-                <a class="navbar-brand col-sm-3 col-md-2 mr-0 text-white" href="#">Jaiz Bank</a>
-                <div class="collapse navbar-collapse" id="navbarsExample07">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top sticky-top flex-md-nowrap p-0">
+                <a class="navbar-brand col-xs-3 col-md-2 mr-0 text-white" href="welcome.html">Jaiz Bank</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                      <li class="nav-item">
-                          <button class="btn btn-sm btn-success btn-plus"> <i class="fa fa-plus fa-fw"></i>Add Profile</button>
-                      </li>
-                    <li>
-                        <i class="fa fa-bell-o"></i>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <button class="btn btn-user btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="#">Settings</a>
-                            <a class="dropdown-item" href="#">Upgrade Plan</a>
-                            <a class="dropdown-item" href="#">Signout</a>
-                          </div>
-                     </li>
-                   
-                     </ul>
+                        <li class="nav-item">
+                                <button class="btn btn-sm btn-success btn-plus"> <i class="fa fa-plus fa-fw"></i> <a href="add-profile.html">Add Profile</button></a> 
+                         </li>
+                        <li class="nav-item">
+                            <i class="fa fa-bell-o"></i>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-user btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdown07">
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <a class="dropdown-item" href="#">Upgrade Plan</a>
+                                <a class="dropdown-item" href="#">Signout</a>
+                            </div>
+                        </li>
+                  </ul>
                 </div>
-               </nav> 
+            </nav>
     
        
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
                     <h1 class="h2">Home</h1>
                     <div class="row">
-                        <div class="col-5">
-                            <button class="btn btn-sm btn-success"> <i class="fa fa-plus fa-fw"></i>Add Profile</button>
-                        </div>
                          
                     </div>
                 </div>
@@ -74,14 +74,24 @@
 <div class="modal fade" id="myModal">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
+
       
             <!-- Modal body -->
-            <div class="modal-body">
+      
+
+           <div class="modal-body">
             <div class="row ">  
                 <div class="col-12 col-md-4 sidebar2">
-                      <P>ADD SOCIAL MEDIA HANDLES</P><br>
-                      <i class="fa fa-user-circle" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;Connect your profile</i><br><br>
-                      <i class="fa fa-trash-o" aria-hidden="true"> &nbsp;&nbsp;&nbsp; Delete your profile</i>
+                      <P style="color:#828282;">ADD SOCIAL MEDIA HANDLES</P><br>
+                      <a class="nav-link active" href="#" style="color: #ff6600" onclick="">
+                            <i class="fa fa-user-circle fa-fw"></i>
+                            Connect your profile<span class="sr-only">(current)</span>
+                          </a>
+
+                          <a class="nav-link" href="del.html" style="color: #000" onclick="" data-toggle="modal" data-target="#meModal">
+                                <i class="fa fa-trash-o fa-fw"></i>
+                                Delete your profile<span class="sr-only">(current)</span>
+                          </a>
                 </div>
                 <div class="col-12 col-md-8">
                     <h2>Connect Your Profile</h2>
@@ -98,7 +108,7 @@
                             </div>
                             <div class=" col-12 col-sm-4">
                                     <div class="card second-card" style="width: 9rem; height: 9rem;">
-                                            <img class="card-img-top" src="img/twitter-logo.png" alt="Card image cap" width="30px;">
+                                            <img class="card-img-top img-adjustable" src="img/twitter-logo.png" alt="Card image cap" width="25px;">
                                             <div class="card-body">
                                             <button>Connect</button>                          
                                             </div>
@@ -117,8 +127,10 @@
 
                         </div> 
             </div>     
-            </div>
-      
+            </div> -->
+        <!-- End of first Modal -->
+                  
+
       
           </div>
         </div>
@@ -126,7 +138,7 @@
 
 
                         <div class="card"><br>
-                            <img src="img/savant-2.png" alt="" srcset="">
+                            <img src="img/image1.png" alt="" srcset="">
                             <div class="card-body">
                                 <h5 class="card-title">A competitor</h5>
                                 <p class="card-text text-muted">Monitor your competitiors<br> online presence.</p><br><br>
