@@ -76,3 +76,9 @@ a{
 .light-green{
     background-color: #6FCF97;
 }
+
+/*REACH*/
+.thumbnail-image{
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
