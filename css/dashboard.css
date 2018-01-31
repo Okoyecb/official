@@ -279,6 +279,16 @@ img{
   margin-right: 30px;
 }
 
+.profile {
+color: #fff;
+text-decoration: none;
+}
+
+.profile:hover{
+  color: #fff;
+  text-decoration: none;
+  }
+
 @media screen and (max-width:450px){
   
  .btn-plus{
