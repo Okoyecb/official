@@ -172,18 +172,53 @@ img{
 }
 
 .first-card{
- padding-top: 8px;
+ /*padding-top: 8px;*/
  background-color: #3b5998;
  border-radius: 0;
 }
 .second-card{
-  padding-top: 8px;
+  /*padding-top: 8px;*/
   background-color: #55acee;
   border-radius: 0;
 }
-.sidebar2{
+.third-card{
+  /*padding-top: 25px;*/
+  background-color: #714778;
+  border-radius: 0;
+}
+.first-card, .second-card, .third-card{
+  padding-top: 25px;
+  /*margin-top: 3em;*/
+}
+.btn-connect-1{
+  background-color: #3b5998;
+  color: #fff;
+  width: 100%;
+  border: 2px solid #3b5998;
+  box-shadow:  4px 4px 7px #333;
+}
+.btn-connect-2{
+  background-color: #55acee;
+  color: #fff;
+  width: 100%;
+  border: 2px solid #55acee;
+  box-shadow:  4px 4px 7px #333;
+}
+.btn-connect-3{
+  background-color: #714778;
+  color: #fff;
+  width: 100%;
+  border: 2px solid #714778;
+  box-shadow:  4px 4px 7px #333;
+}
+ .sidebar2{
   background-color: #f2f2f2;
   height: 495px;
+  padding-top: 5%;
+}
+.btn-active{
+   background-color: #e0e0e0;
+   border-radius: 0;
 }
 .img-adjust{
   height: 35px;
@@ -196,20 +231,20 @@ img{
   margin-left: 50px;
   margin-top:8px;
 }
-.third-card{
-  padding-top: 25px;
-  background-color: #714778;
-  border-radius: 0;
+.table-active{
+  border-top: 2px solid #666;
+  border-left: 2px solid #666;
+  border-right: 2px solid #666;
 }
 .modal-content{
   height: 500px;
 }
 .push{
-  margin-top: 50px;
+  margin-top: 5em;
   padding-right: 30px;
 }
 .qwe{
-  text-align: justify;
+  text-align: left;
 }
 .modal-body{
   padding-top: 0;

@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
 
@@ -25,22 +26,65 @@
   <!-- [ Modal #2 ] -->
   <div class="modal fade" id="myModal-2" tabindex="-1">
     <div class="modal-dialog modal-lg">
-     <div class="modal-content">
-      <div class="modal-body"> 
-                   <P style="color:#828282;">ADD SOCIAL MEDIA HANDLES</P><br>
-                   <button type="button" class=" btn bg-transparent nav-link " href="#" style="color: #000"  data-toggle="modal" data-target="#demo-2" data-dismiss="modal">
-                         <i class="fa fa-user-circle fa-fw"></i>
-                         Connect your profile<span class="sr-only">(current)</span>
-                       </button>
+      <div class="modal-content">
+        <div class="modal-body"> 
+          <div class="row">
+            <div class="col-12 col-md-4 sidebar2">
+              
+              <P style="color:#828282;">ADD SOCIAL MEDIA HANDLES</P>
+              <a class="nav-link  btn bg-transparent text-dark " href="#" style="color: #000 %;"  data-toggle="modal" data-target="#myModal" data-dismiss="modal">
+                    <i class="fa fa-user-circle fa-fw"></i>
+                    Connect your profile<span class="sr-only">(current)</span>
+                  </a>
 
-                       <button  type="button"  class=" btn bg-transparent nav-link active" href="del.html" style="color: #ff6600"  data-toggle="modal" data-target="#demo-1" data-dismiss="modal">
-                             <i class="fa fa-trash-o fa-fw"></i>
-                             Delete your profile<span class="sr-only">(current)</span>
-                       </a>
-             </div>
+                  <a  class=" btn nav-link  btn-active" href="del.html" style="color: #ff6600; "  data-toggle="modal" data-target="#demo-1" data-dismiss="modal">
+                        <i class="fa fa-trash-o fa-fw"></i>
+                        Delete your profile<span class="sr-only">(current)</span>
+                  </a>
+
+            </div>
+            <div class="col-12 col-md-8">
+              <h2 class="text-left fi" style="padding-top: 5%; font-size: 2.5rem; font-weight: 400;">Delete Your Profiles</h2>
+              <p class="qwe">Delete any of your social profiles to stop monitoring your performance and viewing analytics</p>
+              <!-- table -->
+              <div class="table-responsive">
+                <caption class="h1">Facebook</caption>
+                <table class="table table-bordered table-hover table-sm">
+                  <tbody>
+                    <tr class="table-active">
+                      <th scope="row">
+                        <input type="checkbox">
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <input type="checkbox">
+                      </th>
+                      <td> </td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <input type="checkbox">
+                      </th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
-     </div>
     </div>
   </div>
 
@@ -80,18 +124,12 @@
     
        
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 ">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Home</h1>
-                    <div class="row">
-                         
-                    </div>
-                </div>
+
 
                 <div class="text-center">
                         <h5>Hi Ja'iz,Would you like to monitor ?</h5>
                         <p class="text-muted"></p>
                     </div>
-                    <br><br><br>
                     <div class="card-deck text-center">
                         <div class="card"><br>
                             <img src="img/savant-1.png" alt="" srcset="">
@@ -104,7 +142,7 @@
                           <!-- The Modal -->
 <div class="modal fade" id="myModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
+          <div class="modal-content" style="border-radius: 0px;">
 
       
             <!-- Modal body -->
@@ -114,43 +152,47 @@
             <div class="row ">  
                 <div class="col-12 col-md-4 sidebar2">
                       <P style="color:#828282;">ADD SOCIAL MEDIA HANDLES</P><br>
-                      <button class="nav-link btn bg-transparent" href="#" style="color: #ff6600" onclick="">
+                      <a class="nav-link btn btn-active" href="#" style="color: #ff6600; margin-top: -5%;" onclick="">
                             <i class="fa fa-user-circle fa-fw"></i>
                             Connect your profile<span class="sr-only">(current)</span>
-                          </button>
+                          </a>
+                          <a class="nav-link btn bg-transparent" href="#" style="color: #000" onclick=""  data-toggle="modal" data-target="#myModal-2" data-dismiss="modal">
+                            <i class="fa fa-trash-o fa-fw"></i>
+                            Delete your profile<span class="sr-only">(current)</span>
+                          </a>
 
-                          <button  type="button" class=" btn bg-transparent nav-link active" href="del.html" style="color: 000"  data-toggle="modal" data-target="#myModal-2" data-dismiss="modal">
-                                <i class="fa fa-trash-o fa-fw"></i>
-                                Delete your profile<span class="sr-only">(current)</span>
-                          </button>
+                          
                 </div>
                 <div class="col-12 col-md-8">
-                    <h2>Connect Your Profile</h2>
+                    <h2 class="text-left fi" style="padding-top: 5%; font-size: 2.5rem; font-weight: 400;">Connect Your Profile</h2>
                     <p class="qwe">Connect any of your social profiles to start monitoring your performance and viewing analytics</p>
                     
                         <div class="row push">
                             <div class=" col-12 col-sm-4 face-div">
                                     <div class="card first-card" style="width: 9rem; height: 9rem;">
-                                            <img class="card-img-top " src="img/facebook-logo.png" alt="Card image cap">
+                                            <!-- <img class="card-img-top " src="img/facebook-logo.png" alt="Card image cap"> -->
+                                            <i class="fa fa-facebook fa-3x text-white"></i>
                                             <div class="card-body">
-                                            <button>Connect</button>                          
+                                            <button class="btn-connect-1">Connect</button>                          
                                             </div>
                                         </div>
                             </div>
                             <div class=" col-12 col-sm-4">
                                     <div class="card second-card" style="width: 9rem; height: 9rem;">
-                                            <img class="card-img-top img-adjustable" src="img/twitter-logo.png" alt="Card image cap" width="25px;">
+                                            <!-- <img class="card-img-top img-adjustable" src="img/twitter-logo.png" alt="Card image cap" width="25px;"> -->
+                                             <i class="fa fa-twitter fa-3x text-white"></i>
                                             <div class="card-body">
-                                            <button>Connect</button>                          
+                                            <button class="btn-connect-2">Connect</button>                          
                                             </div>
                                         </div>
                             </div>
 
                                  <div class=" col-12 col-sm-4">
                                         <div class="card third-card" style="width: 9rem; height: 9rem;">
-                                            <img class="card-img-top img-adjust" src="img/instagram-icon.png" alt="Card image cap">
+                                            <!-- <img class="card-img-top img-adjust" src="img/instagram-icon.png" alt="Card image cap"> -->
+                                            <i class="fa fa-instagram fa-3x text-white"></i>
                                            <div class="card-body">
-                                            <button>Connect</button>                          
+                                            <button class="btn-connect-3">Connect</button>                          
                                             </div>
                                         </div>
                 </div>            </div>
