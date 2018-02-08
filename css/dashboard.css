@@ -148,9 +148,9 @@ body {
   color: rgb(193, 193, 190);
 }
 img{
-  width: 337px;
+ /* width: 337px;
   height: 249px;
-
+*/
 }
 .fa-user-circle-o{
   margin-bottom: 5px;
@@ -344,6 +344,9 @@ text-decoration: none;
  
    .navbar-nav li button{
      float: left;
+   }
+   .source{
+     margin-left: -150px;
    }
  
  }

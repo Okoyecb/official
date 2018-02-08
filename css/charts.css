@@ -61,3 +61,18 @@ margin-top: -3px;
   .source{
     margin-left: 150px;
   }
+.overflowing-col{
+  padding-top: 5.3%;
+}
+
+  @media screen and (max-width:600px){
+  
+   .source{
+     margin-left: 40px;
+     padding-top: 10%;
+   }
+   .overflowing-col{
+  padding-top: 3%;
+}
+ 
+ }

@@ -82,3 +82,11 @@ a{
     margin-top: 50%;
     margin-bottom: 50%;
 }
+
+.page-link:hover{
+    background-color: #fff;
+    outline: none;
+}
+a:hover{
+    text-decoration: none;
+}
