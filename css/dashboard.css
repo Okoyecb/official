@@ -292,6 +292,10 @@ img{
       /*border-right: #999 solid 1px;*/
       /*border-left: #999 solid 1px;*/
     }
+
+    .navbar-collapse{
+      
+    }
     
 #square {
 	width: 50px;
