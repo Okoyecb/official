@@ -18,8 +18,13 @@
         <link rel="stylesheet" href="css/charts.css">
         <script src="js/Chart.bundle.js"></script>
         <script src="js/utils.js"></script>
-        <script src="js/analyser.js"></script>
-            
+            <style>
+            canvas {
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+            </style>
       </head>
       
       <body>
@@ -85,13 +90,9 @@
 
 
                        <div class="container" style="margin-bottom: 1.5%;">
-                         <div class="content " >
-                            <!-- <div class="wrapper col-2"><canvas id="chart-0"></canvas></div> -->
-                            <!-- <div class="wrapper col-2"><canvas id="chart-1"></canvas></div> -->
-                            <div class="wrapper col-12 mx-auto" style="width: 100%; height: 300px"><canvas id="chart-2"></canvas></div>
-                            
-                          </div>
-
+                         <div style="width: 55%; margin-left: 20%" >
+                                <canvas id="canvas"></canvas>
+                            </div>
                        </div>
                        
                     <div  style="margin: 0% 10%;">
@@ -149,97 +150,82 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
-        var presets = window.chartColors;
-        var utils = Samples.utils;
-        var inputs = {
-          min: -100,
-          max: 100,
-          count: 12,
-          decimals: 2,
-          continuity: 5
-        };
-
-        function generateData(config) {
-          return utils.numbers(Chart.helpers.merge(inputs, config || {}));
-        }
-
-        function generateLabels(config) {
-          return utils.months(Chart.helpers.merge({
-            count: inputs.count,
-            section: 3
-          }, config || {}));
-        }
-
-        var options = {
-          maintainAspectRatio: false,
-          spanGaps: false,
-          elements: {
-            line: {
-              tension: 0.000001
-            }
-          },
-          plugins: {
-            filler: {
-              propagate: false
-            }
-          },
-          scales: {
-            xAxes: [{
-              ticks: {
-                autoSkip: false,
-                maxRotation: 0
-              }
-            }]
-          }
-        };
-
-        [false, 'origin', 'start', 'end'].forEach(function(boundary, index) {
-
-          // reset the random seed to generate the same data for all charts
-          utils.srand(8);
-
-          new Chart('chart-' + index, {
-            type: 'line',
-            data: {
-              labels: generateLabels(),
+          var barChartData = {
+              labels: ["January", "February", "March", "April", "May", "June", "July"],
               datasets: [{
-                backgroundColor: utils.transparentize(presets.red),
-                borderColor: presets.red,
-                data: generateData(),
-                label: 'Dataset',
-                fill: boundary
+                  label: 'Dataset 1',
+                  backgroundColor: window.chartColors.red,
+                  data: [
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor()
+                  ]
+              }, {
+                  label: 'Dataset 2',
+                  backgroundColor: window.chartColors.blue,
+                  data: [
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor()
+                  ]
+              }, {
+                  label: 'Dataset 3',
+                  backgroundColor: window.chartColors.green,
+                  data: [
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor()
+                  ]
               }]
-            },
-            options: Chart.helpers.merge(options, {
-              title: {
-                text: 'fill: ' + boundary,
-                display: false
-              }
-            })
+
+          };
+          window.onload = function() {
+              var ctx = document.getElementById("canvas").getContext("2d");
+              window.myBar = new Chart(ctx, {
+                  type: 'bar',
+                  data: barChartData,
+                  options: {
+                      title:{
+                          display:true,
+                          text:" "
+                      },
+                      tooltips: {
+                          mode: 'index',
+                          intersect: false
+                      },
+                      responsive: true,
+                      scales: {
+                          xAxes: [{
+                              stacked: true,
+                          }],
+                          yAxes: [{
+                              stacked: true
+                          }]
+                      }
+                  }
+              });
+          };
+
+          document.getElementById('randomizeData').addEventListener('click', function() {
+              barChartData.datasets.forEach(function(dataset, i) {
+                  dataset.data = dataset.data.map(function() {
+                      return randomScalingFactor();
+                  });
+              });
+              window.myBar.update();
           });
-        });
-
-
-        function toggleSmooth(btn) {
-          var value = btn.classList.toggle('btn-on');
-          Chart.helpers.each(Chart.instances, function(chart) {
-            chart.options.elements.line.tension = value? 0.4 : 0.000001;
-            chart.update();
-          });
-        }
-
-        function randomize() {
-          var seed = utils.rand();
-          Chart.helpers.each(Chart.instances, function(chart) {
-            utils.srand(seed);
-
-            chart.data.datasets.forEach(function(dataset) {
-              dataset.data = generateData();
-            });
-
-            chart.update();
-          });
-        }
       </script>
 
       </body>

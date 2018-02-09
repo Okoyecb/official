@@ -61,7 +61,9 @@ body {
 /*
  * Navbar
  */
-
+.navbar{
+  background-color: #242424;
+}
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
@@ -330,6 +332,12 @@ text-decoration: none;
   color: #fff;
   text-decoration: none;
   }
+  .dropdown:hover{
+      color:#fff;
+      /*background-color:#e2e6ea;*/
+      background-color: #242424;
+      border-color:#242424;
+    }
 
 @media screen and (max-width:450px){
   

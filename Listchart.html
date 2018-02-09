@@ -16,10 +16,6 @@
         <!-- Custom styles for this template -->
         <!-- <link href="css/dashboard.css" rel="stylesheet"> -->
         <link rel="stylesheet" href="css/charts.css">
-        <script src="js/Chart.bundle.js"></script>
-        <script src="js/utils.js"></script>
-        <script src="js/analyser.js"></script>
-            
       </head>
       
       <body>
@@ -46,7 +42,7 @@
                                                 <h5 class="jaiz"><a href="" style="color:white; padding-top: 5%" >Jaiz Bank</a></h5> 
                                             </li>
                                             <li class="nav-item dropdown new-nav">
-                                                    <button class="btn btn-user btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <button class="btn btn-user btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i> <i class="fa fa-caret-down text-white" style="font-size: 20px"></i>
                                                     </button>
                                                     <div class="dropdown-menu text-white" aria-labelledby="dropdown07">
@@ -84,13 +80,36 @@
             </div>
 
 
-                       <div class="container" style="margin-bottom: 1.5%;">
-                         <div class="content " >
-                            <!-- <div class="wrapper col-2"><canvas id="chart-0"></canvas></div> -->
-                            <!-- <div class="wrapper col-2"><canvas id="chart-1"></canvas></div> -->
-                            <div class="wrapper col-12 mx-auto" style="width: 100%; height: 300px"><canvas id="chart-2"></canvas></div>
-                            
+                       <div class="container" style="margin-bottom: 1.5%; margin-top: 10em">
+                          <div class="row">
+                            <div class="col-12 col-md-4" >
+                              <div class="row">
+                                <div class="col-6 col-md-6">
+                                  <div class="row">
+                                    <div class="col-3  col-md-6">
+                                      <p>Gtbank</p>
+                                    </div>
+                                    <div class="col-3 col-md-6 text-right">
+                                      40%
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6 col-md-6">
+                                  <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>                        
+                            </div>
+                            <div class="col-12 col-md-4">
+                              
+                            </div>
+                            <div class="col-12 col-md-4">
+                              
+                            </div>
                           </div>
+
 
                        </div>
                        
@@ -147,100 +166,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <script>
-        var presets = window.chartColors;
-        var utils = Samples.utils;
-        var inputs = {
-          min: -100,
-          max: 100,
-          count: 12,
-          decimals: 2,
-          continuity: 5
-        };
-
-        function generateData(config) {
-          return utils.numbers(Chart.helpers.merge(inputs, config || {}));
-        }
-
-        function generateLabels(config) {
-          return utils.months(Chart.helpers.merge({
-            count: inputs.count,
-            section: 3
-          }, config || {}));
-        }
-
-        var options = {
-          maintainAspectRatio: false,
-          spanGaps: false,
-          elements: {
-            line: {
-              tension: 0.000001
-            }
-          },
-          plugins: {
-            filler: {
-              propagate: false
-            }
-          },
-          scales: {
-            xAxes: [{
-              ticks: {
-                autoSkip: false,
-                maxRotation: 0
-              }
-            }]
-          }
-        };
-
-        [false, 'origin', 'start', 'end'].forEach(function(boundary, index) {
-
-          // reset the random seed to generate the same data for all charts
-          utils.srand(8);
-
-          new Chart('chart-' + index, {
-            type: 'line',
-            data: {
-              labels: generateLabels(),
-              datasets: [{
-                backgroundColor: utils.transparentize(presets.red),
-                borderColor: presets.red,
-                data: generateData(),
-                label: 'Dataset',
-                fill: boundary
-              }]
-            },
-            options: Chart.helpers.merge(options, {
-              title: {
-                text: 'fill: ' + boundary,
-                display: false
-              }
-            })
-          });
-        });
-
-
-        function toggleSmooth(btn) {
-          var value = btn.classList.toggle('btn-on');
-          Chart.helpers.each(Chart.instances, function(chart) {
-            chart.options.elements.line.tension = value? 0.4 : 0.000001;
-            chart.update();
-          });
-        }
-
-        function randomize() {
-          var seed = utils.rand();
-          Chart.helpers.each(Chart.instances, function(chart) {
-            utils.srand(seed);
-
-            chart.data.datasets.forEach(function(dataset) {
-              dataset.data = generateData();
-            });
-
-            chart.update();
-          });
-        }
-      </script>
+    
+                       <!-- AIzaSyCh9BrjZNlHaPmBQnDjspRmHQ5wu6YUTYc -->
+                       
 
       </body>
 </html>
