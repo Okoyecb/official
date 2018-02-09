@@ -42,10 +42,8 @@
                                                 <h5 class="jaiz"><a href="" style="color:white; padding-top: 5%" >Jaiz Bank</a></h5> 
                                             </li>
                                             <li class="nav-item dropdown new-nav">
-                                                    <button class="btn btn-user btn-sm  dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
-                                                        <i class="fa fa-caret-down text-white" style="font-size: 20px"></i>
-
+                                                    <button class="btn btn-user btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i> <i class="fa fa-caret-down text-white" style="font-size: 20px"></i>
                                                     </button>
                                                     <div class="dropdown-menu text-white" aria-labelledby="dropdown07">
                                                         <a class="dropdown-item" href="#">Settings</a>
@@ -60,7 +58,7 @@
                   </header>
               
             
-           <div role="main" class="col-md-11  pt-3 ml-5 " style="margin-top: 5em;">
+            <div role="main" class="col-md-11  pt-3 ml-5 " style="margin-top: 5em;">
               <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
                 <h1 class="h2"></h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
@@ -83,8 +81,8 @@
 
 
                    
-                            <div  style="margin: 0% 10%;">
-                              <canvas class="my-4" id="myChart" width="200" height="55"></canvas>
+                            <div  style="margin: 2% 10%;">
+                              <canvas class="my-4" id="myChart" width="200" height="70""></canvas>
                             </div>
 
                     <div  style="margin: 0% 10%;">
@@ -93,46 +91,41 @@
                     <div class="card  card-filter" style="width: 100%;">
                             <div class="card-body">
                               <div class="row">
-                                    <div class=" col-12 col-md-6" style="border-right: 2px solid #dfdfdf">
-                                        <h5 class="source text-center">Source</h5><br>
-                                        <div class="row">
-                                          <div class="col-12 col-md-6">
+                                    <div class="col-md-3">
+                                        <h5 class="source">Source</h5><br>
+                                        <ul>
+                                            <input type="checkbox" name="Facebook" value="Fb"> Facebook<br><br>
+                                            <input type="checkbox" name="Twitter" value="Tw"> Twitter<br><br>
+                                            <input type="checkbox" name="Instagram" value="In"> Instagram<br>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 overflowing-col">
+                                          
                                             <ul>
-                                                <input type="checkbox" name="Facebook" value="Fb"> Facebook<br><br>
-                                                <input type="checkbox" name="Twitter" value="Tw"> Twitter<br><br>
-                                                <input type="checkbox" name="Instagram" value="In"> Instagram<br>
+                                                <input type="checkbox" name="Facebook" value="Fb"> Blogs<br><br>
+                                                <input type="checkbox" name="Twitter" value="Tw"> News<br><br>
+                                                <input type="checkbox" name="Instagram" value="In"> Web<br>
                                             </ul>
-                                          </div>
-                                          <div class=" col-12 col-md-6">
-                                            
-                                              <ul>
-                                                  <input type="checkbox" name="Facebook" value="Fb"> Blogs<br><br>
-                                                  <input type="checkbox" name="Twitter" value="Tw"> News<br><br>
-                                                  <input type="checkbox" name="Instagram" value="In"> Web<br>
-                                              </ul>
-                                          </div>
-                                        </div>    
-                                     </div>
+                                        </div>
 
-                                      <div class=" col-12 col-md-6">
-                                         <h5 class="source text-center">Sentiments</h5><br>
+                                      <div class="col-md-6">
+                                         <h5 class="source">Sentiments</h5><br>
                                          <ul>
                                                 <input type="checkbox" name="Facebook" value="Fb"> Positive<br><br>
                                                 <input type="checkbox" name="Twitter" value="Tw"> Negative<br><br>
                                                 <input type="checkbox" name="Instagram" value="In"> Neutral<br>
                                          </ul>
-                                         
-                                         <a class="btn btn-sm btn-outline-success btn-reset" href="#">Reset Filter</a>
-
                                       </div>
 
 
                               </div>
                            
+                              <a class="btn btn-sm btn-outline-success btn-reset" href="#">Reset Filter</a>
+                           
+
                             </div>
                           </div>
                       </div>
-
 
             <!-- </main>   -->
 <!-- Bootstrap core JavaScript

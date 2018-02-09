@@ -112,7 +112,7 @@ body {
   margin-left: 50px;
 }
 
-.navbar-brand{
+.-brand{
   background-color:#000;
   text:#fff;
 }
@@ -283,7 +283,7 @@ img{
     .fa-bell-o{
       padding-left: 4px;
       padding-right: 4px;
-      font-size: 60px;
+      font-size: 30px;
       /*color: rgb(193, 193, 190);*/
       color: #fff;
       /*margin-left: 40px;*/
@@ -291,9 +291,7 @@ img{
       /*border-right: #999 solid 1px;*/
       /*border-left: #999 solid 1px;*/
     }
-    .fa-caret-down{
-      font-size: 50px;
-    }
+    
 #square {
 	width: 50px;
 	height: 100px;
@@ -308,7 +306,7 @@ img{
   border-radius: 30px;
 }
 .source{
-  margin-left: 150px;
+  /*margin-left: 150px;*/
 }
 
 .new-nav{
@@ -350,7 +348,6 @@ text-decoration: none;
      float: left;
    }
    .source{
-     margin-left: -150px;
+     /*margin-left: -150px;*/
    }
  
- }
