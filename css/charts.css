@@ -77,6 +77,27 @@ margin-top: -3px;
 .nav-2{
   margin-top: 5em;
 } 
+.row-chart{
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.row-chart-end{
+  border-bottom: 1px solid #000;
+}
+.col-row{
+  border-right: 1px solid #000;
+}
+.progress{
+  margin-top: 0%;
+  height: 25px;
+  margin-left: -2%;
+}
+
+
+
+
+
 
   @media screen and (max-width:600px){
   
