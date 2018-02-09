@@ -8,6 +8,12 @@ a{
     text-decoration: none;
     color: #f2f2f2;
 }
+.dropdown:hover{
+    color:#fff;
+    /*background-color:#e2e6ea;*/
+    background-color: #242424;
+    border-color:#242424;
+  }
 
 .container{
     width: 70%;
