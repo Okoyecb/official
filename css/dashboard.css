@@ -161,7 +161,7 @@ img{
 
 .img-01{
   height: 24px;
-  margin-left: -34%;
+  margin-left: 10%;
 }
 .img-00{
   margin-top: -42px;
@@ -344,9 +344,6 @@ text-decoration: none;
  .btn-plus{
    margin-left: 250px;
  }
-  .h2{
-     color: red;
-   }
  
    .fa-bell-o{
      margin-left: 10px;
@@ -363,4 +360,4 @@ text-decoration: none;
    .source{
      /*margin-left: -150px;*/
    }
- 
+  }
