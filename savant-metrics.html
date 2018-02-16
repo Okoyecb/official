@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <!--Main Css-->
     <link rel="stylesheet" href="css/main.css">
+    <link href="css/dashboard.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/charts.css">
     <script src="js/Chart.bundle.js"></script>
@@ -61,123 +62,195 @@
                   </div>
                 </nav>
               </header><br><br><br>
-    <div class="row">
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Data Pipes <br></h5>
-                    <i class="fa fa-database"></i>
-                    <p class="no">4</p>
-                    <p class="card-text"></p>
-                    <i class="fa fa-sync-alt"></i>
-                    <a href="#" class="card-link">Updated now</a>
+
+
+              <div class="container-fluid pt-3">
+                <div class="row">
+                  <nav class="col-md-2 d-none d-md-block bg-light sidebar pt-4">
+                    <div class="sidebar-sticky ">
+                      <ul class="nav flex-column">
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="dashboard.html" style="color: #ff6600">
+                            <i class="fa fa-tachometer fa-fw"></i>
+                            Dashboard <span class="sr-only">(current)</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Products</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                        </a>
+                      </h6>
+                      <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa fa-briefcase fa-fw"></i>
+                            Savant Business
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="savantsocial.html">
+                            <i class="fa fa-line-chart fa-fw"></i>
+                            Savant Social
+                          </a>
+                        </li>
+                      </ul>
+                      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Settings</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                        </a>
+                      </h6>
+                      <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                          <a class="nav-link" href="reach.html">
+                            <i class="fa fa-cog fa-fw"></i>
+                            Settings
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="reach.html">
+                            <i class="fa fa-credit-card fa-fw"></i>
+                            Subscriptions
+                          </a>
+                        </li>
+                      </ul>
+
+                      <button class="btn btn-outline-danger btn1 btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</button>
+                      <div class="dropdown-menu" aria-labelledby="dropdown07">
+                        <a class="dropdown-item" href="#">Getting Started</a>
+                        <a class="dropdown-item" href="#">FAQ</a>
+                        <a class="dropdown-item" href="#">Signout</a>
+
+                      </div>
                     </div>
-                </div>
-            </div>
+                  </nav>
 
-            <div class="col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                        <h5 class="card-title">Data Size <br></h5>
-                        <i class="fa fa-database"></i>
-                        <p class="no">110GB</p>
-                        <p class="card-text"></p>
-                        <i class="fa fa-sync-alt"></i>
-                        <a href="#" class="card-link">Updated now</a>
-                        </div>
-                    </div><br>
-                </div>
 
-                <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                            <h5 class="card-title">Crawl Errors<br></h5>
-                            <i class="fa fa-globe"></i>
-                            <p class="no">23</p>
-                            <p class="card-text"></p>
-                            <i class="fa fa-sync-alt"></i>
-                            <a href="#" class="card-link">In the last hour</a>
-                            </div>
-                        </div>
-                    </div>
-     
 
-                    <div class="col-md-3">
-                            <div class="card" style="width: 18rem;">
-                                    <div class="card-body">
-                                    <h5 class="card-title">Data Size <br></h5>
-                                    <i class="fa fa-twitter"></i>
-                                    <p class="no">110GB</p>
-                                    <p class="card-text"></p>
-                                    <i class="fa fa-sync-alt"></i>
-                                    <a href="#" class="card-link">Updated now</a>
-                                    </div>
-                                </div>
-                    </div>
-                
 
-                <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                <h5 class="card-title">Data Size <br></h5>
-                                <i class="fa fa-twitter"></i>
-                                <p class="no">110GB</p>
-                                <p class="card-text"></p>
-                                <i class="fa fa-sync-alt"></i>
-                                <a href="#" class="card-link">Updated now</a>
-                                </div>
-                            </div>
-                </div>
 
-                <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                <h5 class="card-title">Data Size <br></h5>
-                                <i class="fa fa-pinterest-square"></i>
-                                <p class="no">110GB</p>
-                                <p class="card-text"></p>
-                                <i class="fa fa-sync-alt"></i>
-                                <a href="#" class="card-link">Updated now</a>
-                                </div>
-                            </div>
-                </div>
+                  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-0">
+                           <div class="row">
+                                   <div class="col-md-3">
+                                       <div class="card" ">
+                                           <div class="card-body">
+                                           <h5 class="card-title">Data Pipes <br></h5>
+                                           <i class="fa fa-database"></i>
+                                           <p class="no">4</p>
+                                           <p class="card-text"></p>
+                                           <i class="fa fa-sync-alt"></i>
+                                           <a href="#" class="card-link">Updated now</a>
+                                           </div>
+                                       </div>
+                                   </div>
 
-                <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                                <div class="card-body">
-                                <h5 class="card-title">Data Size <br></h5>
-                                <i class="fa fa-instagram"></i>
-                                <p class="no">110GB</p>
-                                <p class="card-text"></p>
-                                <i class="fa fa-sync-alt"></i>
-                                <a href="#" class="card-link">Updated now</a>
-                                </div>
-                            </div>
-                </div>
+                                   <div class="col-md-3">
+                                           <div class="card" ">
+                                               <div class="card-body">
+                                               <h5 class="card-title">Data Size <br></h5>
+                                               <i class="fa fa-database"></i>
+                                               <p class="no">110GB</p>
+                                               <p class="card-text"></p>
+                                               <i class="fa fa-sync-alt"></i>
+                                               <a href="#" class="card-link">Updated now</a>
+                                               </div>
+                                           </div><br>
+                                       </div>
 
-                    <div class="col-md-3">
-                            <div class="card" style="width: 18rem;">
-                                    <div class="card-body">
-                                    <h5 class="card-title">Data Size <br></h5>
-                                    <i class="fa fa-facebook-f"></i>
-                                    <p class="no">110GB</p>
-                                    <p class="card-text"></p>
-                                    <i class="fa fa-sync-alt"></i>
-                                    <a href="#" class="card-link">Updated now</a>
-                                    </div>
-                                </div>
-                    </div>
-      
-           
-      
-                  
-                    <div style="width:85%; height:100%;" class="mx-auto">
-                            <h4 class="lol">Post Trends</h4>
-                            <p class="lal">24 Hours Performance</p>
-                            <canvas id="canvas"></canvas>
-                        </div>
-                      
-                        <script>
+                                       <div class="col-md-3">
+                                               <div class="card" >
+                                                   <div class="card-body">
+                                                   <h5 class="card-title">Crawl Errors<br></h5>
+                                                   <i class="fa fa-globe"></i>
+                                                   <p class="no">23</p>
+                                                   <p class="card-text"></p>
+                                                   <i class="fa fa-sync-alt"></i>
+                                                   <a href="#" class="card-link">In the last hour</a>
+                                                   </div>
+                                               </div>
+                                           </div>
+                            
+
+                                           <div class="col-md-3">
+                                                   <div class="card" >
+                                                           <div class="card-body">
+                                                           <h5 class="card-title">Data Size <br></h5>
+                                                           <i class="fa fa-twitter"></i>
+                                                           <p class="no">110GB</p>
+                                                           <p class="card-text"></p>
+                                                           <i class="fa fa-sync-alt"></i>
+                                                           <a href="#" class="card-link">Updated now</a>
+                                                           </div>
+                                                       </div>
+                                           </div>
+                                       
+
+                                       <div class="col-md-3">
+                                               <div class="card" >
+                                                       <div class="card-body">
+                                                       <h5 class="card-title">Data Size <br></h5>
+                                                       <i class="fa fa-twitter"></i>
+                                                       <p class="no">110GB</p>
+                                                       <p class="card-text"></p>
+                                                       <i class="fa fa-sync-alt"></i>
+                                                       <a href="#" class="card-link">Updated now</a>
+                                                       </div>
+                                                   </div>
+                                       </div>
+
+                                       <div class="col-md-3">
+                                               <div class="card" >
+                                                       <div class="card-body">
+                                                       <h5 class="card-title">Data Size <br></h5>
+                                                       <i class="fa fa-pinterest-square"></i>
+                                                       <p class="no">110GB</p>
+                                                       <p class="card-text"></p>
+                                                       <i class="fa fa-sync-alt"></i>
+                                                       <a href="#" class="card-link">Updated now</a>
+                                                       </div>
+                                                   </div>
+                                       </div>
+
+                                       <div class="col-md-3">
+                                               <div class="card" >
+                                                       <div class="card-body">
+                                                       <h5 class="card-title">Data Size <br></h5>
+                                                       <i class="fa fa-instagram"></i>
+                                                       <p class="no">110GB</p>
+                                                       <p class="card-text"></p>
+                                                       <i class="fa fa-sync-alt"></i>
+                                                       <a href="#" class="card-link">Updated now</a>
+                                                       </div>
+                                                   </div>
+                                       </div>
+
+                                           <div class="col-md-3">
+                                                   <div class="card" >
+                                                           <div class="card-body">
+                                                           <h5 class="card-title">Data Size <br></h5>
+                                                           <i class="fa fa-facebook-f"></i>
+                                                           <p class="no">110GB</p>
+                                                           <p class="card-text"></p>
+                                                           <i class="fa fa-sync-alt"></i>
+                                                           <a href="#" class="card-link">Updated now</a>
+                                                           </div>
+                                                       </div>
+                                           </div>
+                             
+                                  
+                             
+                                         
+                                           <div style="width:85%; height:100%;" class="mx-auto">
+                                                   <h4 class="lol">Post Trends</h4>
+                                                   <p class="lal">24 Hours Performance</p>
+                                                   <canvas id="canvas"></canvas>
+                                               </div>
+                                             
+                              
+                </main>
+              </div>
+                   <script>
                             var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                             var config = {
                                 type: 'line',
