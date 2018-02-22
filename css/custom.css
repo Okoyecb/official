@@ -115,3 +115,10 @@ input:checked + .slider-2:before {
 .slider-2.round-2:before {
   border-radius: 50%;
 }
+
+@media screen and (max-width:780px){
+
+.nav-tabs{
+  margin-top: 7%;
+}
+}

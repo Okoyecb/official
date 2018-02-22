@@ -52,6 +52,7 @@ margin-top: -3px;
     margin-right: 30px;
     color: #ffffff;
     text-decoration: none;
+    line-height: 30px;
   }
 
   .jaiz a:hover{
@@ -93,11 +94,34 @@ margin-top: -3px;
   height: 25px;
   margin-left: -2%;
 }
-/* For the New Tabs */
-.{
-  background-color: #F2F2F2;
+
+.img-sav{
+ margin: auto;
+ display: block;
+ padding-top: 10%;
 }
 
+.form-control{
+  width: 40%;
+  margin: auto;
+ display: block;
+ margin-top: 40px;
+ border-radius: 0;
+ box-shadow: none;
+ 
+}
+
+.btn-success{
+  margin-left: 70%;
+  margin-top: -76px;;
+  border-radius: 0;
+}
+
+.form-control:focus{
+  outline:0;
+}
+
+.btn-success:focus {outline:0;}
 
 
 
