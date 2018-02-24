@@ -123,6 +123,18 @@ margin-top: -3px;
 
 .btn-success:focus {outline:0;}
 
+h3{
+  text-align: center;
+}
+
+.pagination{
+  justify-content: center;
+  margin-top: -33px;
+}
+
+.button-group{
+  margin-bottom: 60px;
+}
 
 
 
