@@ -136,6 +136,10 @@ h3{
   margin-bottom: 60px;
 }
 
+body{
+  overflow-y: scroll;
+}
+
 
 
   @media screen and (max-width:600px){
