@@ -140,6 +140,40 @@ body{
   overflow-y: scroll;
 }
 
+/* .gt{
+  margin-left: 70px;
+}
+
+.one{
+  margin-left: -70px;
+} */
+
+.fa-search{
+  margin-left: 200%;
+  margin-top: -4%;
+ 
+}
+
+.wow{
+  margin-left: 7%;
+}
+.form-control-lg{
+ margin-left: 150%;
+ margin-top: -50px;
+}
+
+hr{
+  width: 80%;
+}
+
+.fa-check-circle{
+  color: cornflowerblue;
+}
+
+/* .word{
+  margin-left: 10%;
+} */
+
 
 
   @media screen and (max-width:600px){
