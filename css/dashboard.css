@@ -2,12 +2,7 @@ body {
   font-size: .875rem;
   margin-bottom: 5px; 
 }
-.navbar-toggler{
-  position: absolute;
-  top: 1;
-  right: 0;
 
-}
 .feather {
   width: 16px;
   height: 16px;
@@ -70,7 +65,7 @@ body {
  * Navbar
  */
 .navbar{
-  background-color: #000;
+  background-color: #242424;
 }
 .navbar-brand {
   padding-top: .75rem;
@@ -358,19 +353,14 @@ text-decoration: none;
 @media screen and (max-width:450px){
   
  .btn-plus{
-   margin-left: 75px;
+   margin-left: 250px;
  }
  
    .fa-bell-o{
      margin-left: 10px;
      margin-right: 0;
    }
- .dropdown{
-   margin-left: 50px;
- }
- .bell{
-   margin-left: 55px;
- }
+ 
    .nav-item{
      margin-bottom: 5px;
    }
@@ -394,9 +384,5 @@ text-decoration: none;
       display: flex;
       justify-content: flex-end;
       margin-left: -20%;
-      }
-      nav{
-        /* width: 1024px; */
-      }
+     }
     }
-
