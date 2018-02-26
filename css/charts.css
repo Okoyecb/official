@@ -177,6 +177,11 @@ hr{
 .tadjust{
   background-color: #000;
   color: #dae0e5;
+  height:60px;
+}
+
+.oll{
+  line-height: 400%;
 }
 
 .tadjust:hover{
