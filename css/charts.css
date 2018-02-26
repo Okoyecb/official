@@ -174,7 +174,23 @@ hr{
 /* .word{
   margin-left: 10%;
 } */
+.tadjust{
+  background-color: #000;
+  color: #dae0e5;
+}
 
+.tadjust:hover{
+  background-color: #000;
+  color: #dae0e5;
+}
+
+.t4{
+  padding-top:8px;
+}
+
+.il{
+  margin-top: -7px;
+}
 
 
   @media screen and (max-width:600px){
