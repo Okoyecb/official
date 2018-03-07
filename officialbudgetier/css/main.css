@@ -1,0 +1,63 @@
+.nav1{
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+
+.main-one{
+font-family: Circular;
+Font-Style: Book;
+Font-Size: 40px;
+Line-Height: 41px;
+text-Align: Center;
+color: #D42F29;
+margin-top: 6%;
+font-weight: 300;
+}
+
+.main-two{
+font-family: Circular;
+Font-Style: Book;
+Font-Size: 26px;
+Line-Height: 10px;
+text-Align: Center;
+color: #08058E;
+font-weight: 500;
+
+}
+
+.login{
+    font-size: 25px;
+    text-Align: Center;
+    line-height: 100px;
+    color: #4F4F4F;
+}
+
+.form-control{
+    width: 370px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    
+}
+.form-control{
+    outline:none;
+}
+.form{
+    margin-left: 35%;
+}
+.email{
+    font-size: 15px;
+    color:#595959;
+}
+.btn{
+    width: 370px;
+    margin-top: 45px;
+    background-color: #203391;
+    border-radius: 3px;
+}
+
+.btn:hover{
+    background-clip:  #203391;
+}
